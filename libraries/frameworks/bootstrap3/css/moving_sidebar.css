@@ -1,0 +1,43 @@
+
+body { 
+	padding-top: 100px;
+	position: relative;
+}
+
+.affix-top {
+	width: inherit;
+}
+ .nav {
+ 	position: fixed;
+ }
+ .nav > .active>ul {
+    display: block;
+}
+footer {
+	padding: 2em 0;
+	margin: 3em 0;
+	border-top: 1px solid #ddd;
+	color: #999;
+	text-align: center;
+}
+.page-sidebar > .nav > li > a {
+	display: block;
+	padding: 4px 20px;
+	font-size: 13px;
+	font-weight: 500;
+}
+.page-sidebar .nav > .active > a, 
+.page-sidebar .nav > .active:hover > a {
+	border-left: 2px solid #E81828;
+}
+.page-sidebar .nav > li > a:hover {
+	border-left: 1px solid #E81828;
+	background-color: transparent;
+}
+/*
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>.active:hover>a, 
+.bs-docs-sidebar .nav>.active:focus>a {
+	border-left: 2px solid #563d7c;
+}
+*/
