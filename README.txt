@@ -1,2 +1,3 @@
-index.Rmd contains the format for a moving sidebar and two column layout in slidify
-	it uses the bootstrap3 library which should be using Bootstrap 3.2 but doesn't for some reason
+## An introduction to R
+
+This is an introduction to R designed for students taking STAT 217 at Montana State University.

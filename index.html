@@ -29,8 +29,10 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="libraries/frameworks/bootstrap3/js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
     <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="./assets/css/custom.css"></link>
 <link rel=stylesheet href="./assets/css/moving_sidebar.css"></link>
 <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+<link rel=stylesheet href="http://fonts.googleapis.com/css?family=Vollkorn"></link>
 
   <script src="libraries/frameworks/bootstrap3/js/jquery.js"></script>
   
@@ -47,9 +49,14 @@
    <!-- Ref: http://twitter.github.com/bootstrap/examples/hero.html -->
   <div class="container">
 
-  <div class = "row">
-    <div class = "col-md-9 col-sm-12">
-      <section id="slide-1">
+    <div class = "row">
+      <div class="jumbotron">
+        <h1>R Intro</h1>
+        <h3>Stat 217</h3>
+      </div>
+
+      <div class = "col-md-9 col-sm-12">
+        <section id="slide-1">
   <div class="page-header">
     <h2>Getting Started</h2>
   </div>
@@ -93,7 +100,7 @@
   <div class="page-header">
     <h2>Creating Variables</h2>
   </div>
-  <p>One of the nice things about R is that you can store information.  Here, I assign the letter <code>x</code> to have a value of 3.</p>
+  <p>One of the nice things about R is that you can store information.  Here, assign the letter <code>x</code> to have a value of 3 by typing the following code into the console and hitting Enter.</p>
 
 <pre><code class="r">x &lt;- 3
 </code></pre>
@@ -145,12 +152,12 @@
   <button class="quiz-clear btn btn-danger">Clear</button>
   
   <div class="quiz-hint">
-  <p>Make sure you have assigned <code>x</code> to have the value of three</p>
+  <p>Make sure you have assigned <code>x</code> to have the value of 3 and <code>y</code> to have the value of 1024</p>
 
 </div>
 <div class="quiz-explanation">
   <ol>
-<li><span class='answer'>1274</span></li>
+<li><span class='answer'>1725</span></li>
 </ol>
 
 </div>
@@ -200,7 +207,7 @@
   <div class="page-header">
     <h2>Mock Jury Data</h2>
   </div>
-  <p>Here, we&#39;ll need to reproduce the plots from Wednesday in class.  To begin, we need to load the <code>heplots</code> package.  Make sure the <code>heplots</code> package is installed then type <code>require(heplots)</code> into your R script on a new line and run that line of code.</p>
+  <p>Here, we&#39;ll need to reproduce the plots from Wednesday in class.  To begin, we need to load the <code>heplots</code> package.  Make sure the <code>heplots</code> package is installed (see the last paragraph of page 12 in your book) then type <code>require(heplots)</code> into your R script on a new line and run that line of code.  This loads all the code and datasets associated with the <code>heplots</code> package.</p>
 
 <pre><code class="r">require(heplots)
 </code></pre>
@@ -261,8 +268,8 @@ rownames(MockJury) &lt;- 1:nrow(MockJury)
 
 <ol>
 <li>Prints the first six rows of the dataset</li>
-<li><em>Prints six randomly selected rows from the dataset</em></li>
-<li>Prints the last six rows of the dataset</li>
+<li>Prints six randomly selected rows from the dataset</li>
+<li><em>Prints the last six rows of the dataset</em></li>
 <li>Summarizes the dataset</li>
 </ol>
 
@@ -338,42 +345,42 @@ rownames(MockJury) &lt;- 1:nrow(MockJury)
 <p><img src="assets/fig/plots-2.png" title="plot of chunk plots" alt="plot of chunk plots" style="display: block; margin: auto;" /></p>
 
 </section>
-    </div>  <!-- end content -->
+      </div>  <!-- end content -->
 
-    <div class = "col-md-3">
-      <div class = "page-sidebar hidden-print hidden-xs hidden-sm affix-top">
-        <ul class = "nav navlist">
-          
-          <li><a href = "#slide-1"> Getting Started</a></li>
+      <div class = "col-md-3">
+        <div class = "page-sidebar hidden-print hidden-xs hidden-sm affix-top">
+          <ul class = "nav navlist">
+            
+            <li><a href = "#slide-1"> Getting Started</a></li>
 
-          <li><a href = "#slide-2"> Testing Out R</a></li>
+            <li><a href = "#slide-2"> Testing Out R</a></li>
 
-          <li><a href = "#slide-3"> Creating Variables</a></li>
+            <li><a href = "#slide-3"> Creating Variables</a></li>
 
-          <li><a href = "#slide-4"> Making Your New Variable</a></li>
+            <li><a href = "#slide-4"> Making Your New Variable</a></li>
 
-          <li><a href = "#slide-5"> Using Assigned Variables</a></li>
+            <li><a href = "#slide-5"> Using Assigned Variables</a></li>
 
-          <li><a href = "#slide-6"> An Error in R</a></li>
+            <li><a href = "#slide-6"> An Error in R</a></li>
 
-          <li><a href = "#slide-7"> R Scripts</a></li>
+            <li><a href = "#slide-7"> R Scripts</a></li>
 
-          <li><a href = "#slide-8"> Mock Jury Data</a></li>
+            <li><a href = "#slide-8"> Mock Jury Data</a></li>
 
-          <li><a href = "#slide-9"> Some R commands</a></li>
+            <li><a href = "#slide-9"> Some R commands</a></li>
 
-          <li><a href = "#slide-10"> The <code>tail</code> function</a></li>
+            <li><a href = "#slide-10"> The <code>tail</code> function</a></li>
 
-          <li><a href = "#slide-11"> Selecting Variables</a></li>
+            <li><a href = "#slide-11"> Selecting Variables</a></li>
 
-          <li><a href = "#slide-12"> More R functions</a></li>
+            <li><a href = "#slide-12"> More R functions</a></li>
 
-          <li><a href = "#slide-13"> Plotting in R</a></li>
-        </ul>
-      </div>
-    </div>  <!-- end sidebar -->
- 
-  </div>  <!-- end row -->
+            <li><a href = "#slide-13"> Plotting in R</a></li>
+          </ul>
+        </div>
+      </div>  <!-- end sidebar -->
+   
+    </div>  <!-- end row -->
   </div>  <!-- end container -->
 </body>
   <script src="libraries/frameworks/bootstrap3/js/bootstrap.min.js"></script>

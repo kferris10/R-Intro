@@ -1,6 +1,5 @@
 ---
 title       : R Intro
-subtitle    : 
 author      : Kevin
 job         : Stat 217
 framework   : bootstrap3        # {io2012, html5slides, shower, dzslides, ...}
@@ -13,6 +12,8 @@ layout      : deck3
 assets      : 
   css       : 
     - "assets/css/moving_sidebar.css"
+    - "assets/css/custom.css"
+    - "http://fonts.googleapis.com/css?family=Vollkorn"
 --- 
 
 ## Getting Started
@@ -47,7 +48,7 @@ You can just copy and paste into the R console.
 
 ## Creating Variables
 
-One of the nice things about R is that you can store information.  Here, I assign the letter `x` to have a value of 3.
+One of the nice things about R is that you can store information.  Here, assign the letter `x` to have a value of 3 by typing the following code into the console and hitting Enter.
 
 
 ```r
@@ -99,10 +100,10 @@ Now that you have assigned `x` to be 3 and `y` to be 1024, let's use R to do som
 
 
 *** .hint
-Make sure you have assigned `x` to have the value of three
+Make sure you have assigned `x` to have the value of 3 and `y` to have the value of 1024
 
 *** .explanation
-1. <span class='answer'>1274</span>
+1. <span class='answer'>1725</span>
 
 --- &radio
 ## An Error in R
@@ -132,7 +133,7 @@ You can type a line of code into the R script, then hit Ctrl+Enter to run that l
 ---
 ## Mock Jury Data
 
-Here, we'll need to reproduce the plots from Wednesday in class.  To begin, we need to load the `heplots` package.  Make sure the `heplots` package is installed then type `require(heplots)` into your R script on a new line and run that line of code.
+Here, we'll need to reproduce the plots from Wednesday in class.  To begin, we need to load the `heplots` package.  Make sure the `heplots` package is installed (see the last paragraph of page 12 in your book) then type `require(heplots)` into your R script on a new line and run that line of code.  This loads all the code and datasets associated with the `heplots` package.
 
 
 ```r
@@ -198,8 +199,8 @@ tail(MockJury)
 What does `tail(MockJury)` do?
 
 1. Prints the first six rows of the dataset
-2. _Prints six randomly selected rows from the dataset_
-3. Prints the last six rows of the dataset
+2. Prints six randomly selected rows from the dataset
+3. _Prints the last six rows of the dataset_
 4. Summarizes the dataset
 
 *** .hint

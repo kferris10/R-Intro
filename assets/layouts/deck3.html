@@ -21,22 +21,27 @@
    <!-- Ref: http://twitter.github.com/bootstrap/examples/hero.html -->
   <div class="container">
 
-  <div class = "row">
-    <div class = "col-md-9 col-sm-12">
-      {{{ page.content }}}
-    </div>  <!-- end content -->
-
-    <div class = "col-md-3">
-      <div class = "page-sidebar hidden-print hidden-xs hidden-sm affix-top">
-        <ul class = "nav navlist">
-          {{ #page.slides }}
-          <li><a href = "#{{id}}"> {{{ title }}}</a></li>
-          {{/page.slides}}
-        </ul>
+    <div class = "row">
+      <div class="jumbotron">
+        <h1>{{ page.title }}</h1>
+        <h3>Stat 217</h3>
       </div>
-    </div>  <!-- end sidebar -->
- 
-  </div>  <!-- end row -->
+
+      <div class = "col-md-9 col-sm-12">
+        {{{ page.content }}}
+      </div>  <!-- end content -->
+
+      <div class = "col-md-3">
+        <div class = "page-sidebar hidden-print hidden-xs hidden-sm affix-top">
+          <ul class = "nav navlist">
+            {{ #page.slides }}
+            <li><a href = "#{{id}}"> {{{ title }}}</a></li>
+            {{/page.slides}}
+          </ul>
+        </div>
+      </div>  <!-- end sidebar -->
+   
+    </div>  <!-- end row -->
   </div>  <!-- end container -->
 </body>
   <script src="{{page.url.framework}}/js/bootstrap.min.js"></script>
