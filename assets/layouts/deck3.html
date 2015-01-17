@@ -20,19 +20,21 @@
    <![endif]-->
    <!-- Ref: http://twitter.github.com/bootstrap/examples/hero.html -->
 
-  <div class="jumbotron">
-    <div class="container">
-      <h1>{{ page.title }}</h1>
-      <h3>Stat 217</h3>
-    </div>
-  </div>
-
   <div class="container">
 
     <div class = "row">
 
       <div class = "col-md-9 col-sm-12">
+
+        <div class="jumbotron">
+          <div class="container">
+            <h1>{{ page.title }}</h1>
+            <h3>Stat 217</h3>
+          </div>
+        </div>
+
         {{{ page.content }}}
+
       </div>  <!-- end content -->
 
       <div class = "col-md-3">
@@ -44,8 +46,17 @@
           </ul>
         </div>
       </div>  <!-- end sidebar -->
-   
+
     </div>  <!-- end row -->
+
+   
+      <!-- Footer -->
+      <footer id="top" role="footer">
+        <div class="container text-center">
+          <span class="text-muted">Built by <a href="http://slidify.org/">Slidify</a>.  Styled using <a href="http://getbootstrap.com/">Bootstrap</a>.  Theme by <a href="http://bootswatch.com/">Bootswatch</a>.  Hosted on <a href="https://github.com/">GitHub</a>.</span>
+        </div>
+      </footer>
+
   </div>  <!-- end container -->
 </body>
   <script src="{{page.url.framework}}/js/bootstrap.min.js"></script>

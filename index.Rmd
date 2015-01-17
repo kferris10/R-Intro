@@ -3,7 +3,7 @@ title       : R Intro
 author      : Kevin
 job         : Stat 217
 framework   : bootstrap3        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
+highlighter : highlight  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : [quiz, mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
@@ -12,8 +12,9 @@ layout      : deck3
 assets      : 
   css       : 
     - "assets/css/moving_sidebar.css"
-    - "assets/css/custom.css"
+    - "assests/css/custom.css"
     - "http://fonts.googleapis.com/css?family=Vollkorn"
+    - "http://fonts.googleapis.com/css?family=Droid%20Sans%20Mono"
 --- 
 
 ## Getting Started
@@ -27,7 +28,7 @@ knitr::opts_chunk$set(echo = T,
                       fig.align = "center", 
                       fig.width = 8, 
                       fig.height = 5, 
-                      comment = "", 
+                      comment = "#>", 
                       cache = F)
 set.seed(42)
 ```

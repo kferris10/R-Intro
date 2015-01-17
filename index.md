@@ -3,7 +3,7 @@ title       : R Intro
 author      : Kevin
 job         : Stat 217
 framework   : bootstrap3        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
+highlighter : highlight  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : [quiz, mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
@@ -12,8 +12,9 @@ layout      : deck3
 assets      : 
   css       : 
     - "assets/css/moving_sidebar.css"
-    - "assets/css/custom.css"
+    - "assests/css/custom.css"
     - "http://fonts.googleapis.com/css?family=Vollkorn"
+    - "http://fonts.googleapis.com/css?family=Droid%20Sans%20Mono"
 --- 
 
 ## Getting Started
@@ -29,7 +30,7 @@ Once you have opened RStudio you can begin to use R.  In some ways, R is very si
 ```
 
 ```
-[1] 7
+#> [1] 7
 ```
 
 --- &multitext
@@ -63,7 +64,7 @@ x
 ```
 
 ```
-[1] 3
+#> [1] 3
 ```
 
 I can now use `x` for addition
@@ -74,7 +75,7 @@ x + 4
 ```
 
 ```
-[1] 7
+#> [1] 7
 ```
 
 --- 
@@ -167,13 +168,13 @@ head(MockJury)
 ```
 
 ```
-          Attr    Crime Years Serious independent sincere
-1 Unattractive Burglary     1       3           6       5
-2 Unattractive Burglary     4       8           2       9
-3 Unattractive Burglary     3       5           9       7
-4 Unattractive Burglary     2       2           7       1
-5 Unattractive Burglary     8       5           5       1
-6 Unattractive Burglary     8       9           2       8
+#>           Attr    Crime Years Serious independent sincere
+#> 1 Unattractive Burglary     1       3           6       5
+#> 2 Unattractive Burglary     4       8           2       9
+#> 3 Unattractive Burglary     3       5           9       7
+#> 4 Unattractive Burglary     2       2           7       1
+#> 5 Unattractive Burglary     8       5           5       1
+#> 6 Unattractive Burglary     8       9           2       8
 ```
 
 Try
@@ -184,13 +185,13 @@ tail(MockJury)
 ```
 
 ```
-      Attr   Crime Years Serious independent sincere
-70 Average Swindle     3       2           9       9
-71 Average Swindle     2       1           8       8
-72 Average Swindle     7       4           9       1
-73 Average Swindle     6       3           5       2
-74 Average Swindle    12       9           9       1
-75 Average Swindle     8       8           1       5
+#>       Attr   Crime Years Serious independent sincere
+#> 70 Average Swindle     3       2           9       9
+#> 71 Average Swindle     2       1           8       8
+#> 72 Average Swindle     7       4           9       1
+#> 73 Average Swindle     6       3           5       2
+#> 74 Average Swindle    12       9           9       1
+#> 75 Average Swindle     8       8           1       5
 ```
 
 --- &radio
@@ -217,10 +218,10 @@ MockJury$Years
 ```
 
 ```
- [1]  1  4  3  2  8  8  1  1  5  7  1  5  2 12 10  1  6  2  5 12  6  3  8
-[24]  4 10 10 15 15  3  3  3 11 12  2  1  1 12  5  5  4  3  6  4  9  8  3
-[47]  2 10  1  1  3  1  3  5  8  3  1  1  1  2  2  1  1  2  3  4  5  3  3
-[70]  3  2  7  6 12  8
+#>  [1]  1  4  3  2  8  8  1  1  5  7  1  5  2 12 10  1  6  2  5 12  6  3  8
+#> [24]  4 10 10 15 15  3  3  3 11 12  2  1  1 12  5  5  4  3  6  4  9  8  3
+#> [47]  2 10  1  1  3  1  3  5  8  3  1  1  1  2  2  1  1  2  3  4  5  3  3
+#> [70]  3  2  7  6 12  8
 ```
 
 ---
@@ -234,7 +235,7 @@ mean(MockJury$Years)
 ```
 
 ```
-[1] 4.88
+#> [1] 4.88
 ```
 
 ```r
@@ -242,7 +243,7 @@ sd(MockJury$Years)
 ```
 
 ```
-[1] 3.755932
+#> [1] 3.755932
 ```
 
 The `summary` function is very useful in R.  For a quantitative variable, it will return the 5 number summary as well as the mean.
@@ -253,8 +254,8 @@ summary(MockJury$Years)
 ```
 
 ```
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   1.00    2.00    3.00    4.88    7.50   15.00 
+#>    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+#>    1.00    2.00    3.00    4.88    7.50   15.00
 ```
 
 ---

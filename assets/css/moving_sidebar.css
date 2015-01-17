@@ -7,13 +7,6 @@ body {
 .affix-top {
 	width: inherit;
 }
-footer {
-	padding: 2em 0;
-	margin: 3em 0;
-	border-top: 1px solid #ddd;
-	color: #999;
-	text-align: center;
-}
 /* Side Navigation */
  .page-sidebar .nav {
  	position: fixed;
@@ -30,15 +23,9 @@ footer {
 .page-sidebar .nav > .active > a, 
 .page-sidebar .nav > .active:hover > a {
 	border-left: 2px solid #E81828;
+	background-color: #ededed;
 }
 .page-sidebar .nav > li > a:hover {
 	border-left: 1px solid #E81828;
 	background-color: transparent;
 }
-/*
-.bs-docs-sidebar .nav>.active>a, 
-.bs-docs-sidebar .nav>.active:hover>a, 
-.bs-docs-sidebar .nav>.active:focus>a {
-	border-left: 2px solid #563d7c;
-}
-*/
